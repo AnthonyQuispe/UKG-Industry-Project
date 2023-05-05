@@ -1,0 +1,19 @@
+@use '../../Styles/partials/global' as *;
+@use '../../Styles/partials/mixins' as *;
+@use '../../Styles/partials/typography' as *;
+@use '../../Styles/partials/variables' as *;
+
+
+.button{
+    background-color: $primary-light-teal;
+    color: $primary-dark-teal;
+    padding: 0.5rem 1rem;
+    border-radius: 36px;
+    border: 2px solid $primary-dark-teal;
+    height: 7.625rem;
+    width: 15.375rem;
+
+    &__content{
+        font-size: 2.25rem;
+    }
+}

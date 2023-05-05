@@ -1,0 +1,70 @@
+@use '../../Styles/partials/global' as *; 
+@use '../../Styles/partials/mixins' as *;
+@use '../../Styles/partials/typography' as *;
+@use '../../Styles/partials/variables' as *; 
+
+.signIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__header{
+        &-content{
+                font-family: volte;
+                font-size: 50px;
+                font-weight: 500;
+                color: $primary-dark-teal;
+                margin-bottom: 2rem;
+            }
+    }
+
+    &__input{
+        border: none;
+        background-color: $primary-white;
+        width: 100%;
+        height: 2rem;
+        font-size: 20px;
+
+        &:focus{
+            outline: none;
+            border: 2px solid $primary-light-teal;
+        }
+        &:hover{
+            outline: none;
+            border: 1px solid $primary-light-teal;
+        }
+        
+        &-container{
+            width: 200%;
+            
+        }
+        &-subheader{
+            position: relative;
+        }
+
+
+        &-container-subheader{
+            font-family: volte;
+            border: 4px solid $supporting-light-gray;
+            background-color: $primary-white;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            padding: 8px;
+    
+        }
+        
+        &-subheader{
+            color: $primary-light-teal;
+        }
+    }
+
+    &__forgot-password{
+        font-family: volte;
+        font-weight: 500;
+        font-size: 36px;
+        color: $primary-light-teal;
+        margin: 2rem;
+        
+    }
+}

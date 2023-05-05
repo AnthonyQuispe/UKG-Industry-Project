@@ -1,0 +1,20 @@
+
+@use "../../Styles/partials/variables" as *;
+@use "../../Styles/partials/global" as *;
+
+.moods-bar{
+    display: flex;
+    background-color: $primary-dark-teal;
+    justify-content: space-evenly;
+    align-items: center;
+    &__text{
+        font-size: 2rem;
+        font-weight: 400;
+        margin-right: 8rem;
+    }
+}
+.icon-image{
+    margin-left: 1rem;
+}
+
+
