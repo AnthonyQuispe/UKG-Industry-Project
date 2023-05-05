@@ -4,12 +4,17 @@
 @use '../../Styles/partials/variables' as *; 
 
 .home{
-    
-
     &__container{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        
     }
+    &__logo-container{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    
+
 }

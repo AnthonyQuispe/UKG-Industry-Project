@@ -4,7 +4,7 @@ function Button (){
     return(
         <>
         <button className='button'>
-            Sign In
+            <h4 className='button__content'>Sign In</h4>
         </button>
         </>
     );
