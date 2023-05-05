@@ -1,6 +1,7 @@
 import './Home.scss';
 import logo from "../../assets/logo-green.png"
 import SignIn from '../../components/SignIn/SignIn';
+import PointsCard from '../../components/PointsCard/PointsCard';
 
 function Home (){
     return(
@@ -8,6 +9,7 @@ function Home (){
             <div>
                 <img src={logo}alt="" />
                 <SignIn/>
+                <PointsCard />
             </div>
         
         </section>
