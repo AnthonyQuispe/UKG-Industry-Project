@@ -1,0 +1,22 @@
+@use "../../Styles/partials/global" as *;
+@use "../../Styles/partials/typography" as *;
+@use "../../Styles/partials/variables" as *;
+@use '../../Styles/partials/mixins' as *;
+
+.achieve {
+    height: 500px;
+    width: 400px;
+    padding: 5%;
+    &__image {
+        width: 50px;
+    }
+    &__text {
+        font-size: 16px;
+    }
+    &__card {
+        background-color: $primary-white;
+        width: 300px;
+        height: 40px;
+        border-radius: 20px;
+    }
+}

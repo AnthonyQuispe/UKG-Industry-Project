@@ -1,0 +1,85 @@
+@use "../../Styles/partials/global" as *;
+@use "../../Styles/partials/typography" as *;
+@use "../../Styles/partials/variables" as *;
+@use '../../Styles/partials/mixins' as *;
+
+.points {
+    background-color: rgb(15, 94, 64);
+    border-radius: 20px;
+    height: 400px;
+    width: 500px;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 5%;
+    &__headers {
+        display: flex;
+        flex-direction: column;
+    }
+    &__headers-container {
+        display: inline-flex;
+        justify-content: space-between;
+
+    }
+    &__image {
+        width: 50px;
+        height: 50px;
+        background-color: gray;
+    }
+    &__image-box {
+        display: flex;
+    }
+    &__bar {
+        width: 100%;
+        height: 35px;
+        // padding: 0 5%;
+        // margin: 0 5%;
+        border-radius: 20px;
+        border: none;
+    }
+    &__bar2 {
+        display: flex;
+        background-color: $primary-light-teal;
+        width: 60%;
+        height: 35px;
+        // padding: 0 5%;
+        // margin: 0 5%;
+        border-radius: 20px;
+        border: none;
+    }
+    &__bar-box {
+        width: 100%;
+    }
+    &__points-mid {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__totals {
+        display: flex;
+        justify-content: space-evenly;
+        border-top: 1px solid grey;
+    }
+    &__teal {
+        color: $primary-light-teal;
+    }
+    &__grey {
+        color: $supporting-dark-gray;
+    }
+}
+
+.grey {
+color: $supporting-dark-gray;
+}
+.longer {
+    width: 150px;
+}
+
+.padding-top {
+    padding-top: 20px;
+}
+
+
+p {
+    color: white;
+    font-size: 20px;
+    padding: 5% 5%;
+}
