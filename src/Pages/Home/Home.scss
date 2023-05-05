@@ -1,0 +1,15 @@
+@use '../../Styles/partials/global' as *; 
+@use '../../Styles/partials/mixins' as *;
+@use '../../Styles/partials/typography' as *;
+@use '../../Styles/partials/variables' as *; 
+
+.home{
+    
+
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
