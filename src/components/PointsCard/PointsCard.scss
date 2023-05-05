@@ -4,13 +4,20 @@
 @use '../../Styles/partials/mixins' as *;
 
 .points {
-    background-color: rgb(15, 94, 64);
+    background-color: $primary-white;
     border-radius: 20px;
     height: 400px;
-    width: 500px;
+    width: 50%;
     display: inline-flex;
     flex-direction: column;
     padding: 5%;
+    
+    &__name{
+        color: $primary-dark-teal;
+        font-size: 36px;
+        font-weight: 500;
+        width: 20rem;
+    }
     &__headers {
         display: flex;
         flex-direction: column;
@@ -59,7 +66,7 @@
         border-top: 1px solid grey;
     }
     &__teal {
-        color: $primary-light-teal;
+        color: $primary-dark-teal;
     }
     &__grey {
         color: $supporting-dark-gray;
