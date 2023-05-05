@@ -2,6 +2,7 @@
 import Chatgpt from "./components/ChatGpt/Chatgpt"
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/chat" element={<Chatgpt />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </main>
     </>
