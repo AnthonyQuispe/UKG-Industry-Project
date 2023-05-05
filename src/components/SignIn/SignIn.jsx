@@ -8,13 +8,13 @@ function SignIn() {
             </div>
             <div className="signIn__input-container">
                 <div className="signIn__input-container-subheader">
-                        <p className="signIn__input-subheader">User name</p>
+                        <h5 className="signIn__input-subheader">User name</h5>
                         <input type="text" className="signIn__input" />
                     
                 </div>
                 <div className="signIn__input-container-subheader">
                     
-                        <p className="signIn__input-subheader">Password</p>
+                        <h5 className="signIn__input-subheader">Password</h5>
                         <input type="password" className="signIn__input" />
                     
                 </div>

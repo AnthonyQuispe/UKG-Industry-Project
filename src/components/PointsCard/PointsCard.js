@@ -1,5 +1,6 @@
 import React from "react";
 import "./PointsCard.scss";
+import four from '../../assets/icons/4.png'
 
 const PointsCard = () => {
   return (
@@ -12,7 +13,7 @@ const PointsCard = () => {
           <p className="points__grey">Financial Analyst</p>
         </div>
         <div className="points__image-box">
-          <img className="points__image"></img>
+          <img src={four} alt="four" className="points__image"></img>
         </div>
       </div>
 

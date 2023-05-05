@@ -8,6 +8,7 @@ const Navbar = () => {
   return (
     <nav className='nav'>
     <Link to='/dashboard'><img className='nav__image' src={UkgIcon} alt='logo' /></Link>
+    <div className='diver'></div>
     <Link to='/'><p className='nav__text'>Language</p></Link>
     </nav>
   )
