@@ -1,11 +1,17 @@
-import Home from "./Pages/Home/Home";
+// import Home from "./Pages/Home/Home";
+import Chatgpt from "./Components/ChatGpt/Chatgpt.jsx";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">Our Header will go here</header>
-      <Home/>
-    </div>
+    <>
+      <main>
+        <Routes>
+          <Route path="/chat" element={<Chatgpt />} />
+        </Routes>
+      </main>
+    </>
   );
 }
 
