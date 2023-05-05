@@ -1,5 +1,5 @@
 import React from "react";
-import Guy from "../../Assets/guy.jpeg";
+import Guy from "../../assets/Karim Abud.png";
 import "./Dashboard.scss";
 // import Navbar from '../../components/Navbar/Navbar'
 // import './Navbar.scss'
