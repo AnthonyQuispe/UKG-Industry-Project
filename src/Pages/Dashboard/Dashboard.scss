@@ -1,0 +1,12 @@
+@use "../../Styles/partials/global" as *;
+@use "../../Styles/partials/typography" as *;
+@use "../../Styles/partials/variables" as *;
+@use '../../Styles/partials/mixins' as *;
+
+
+.dash {
+    background-color: $primary-dark-teal;
+    height: 100vh;
+    width: 100%;
+    
+}
