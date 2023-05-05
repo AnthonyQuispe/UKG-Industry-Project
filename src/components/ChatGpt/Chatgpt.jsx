@@ -3,7 +3,7 @@ import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
 import "./Chatgpt.scss";
 import CloseOut from "../../assets/icons/CloseOut.png";
 import Send from "../../assets/icons/Send.png";
-import ProfileImg from "../../assets/icons/KarimAbud.png";
+import ProfileImg from "../../assets/eve.png";
 
 import {
   MainContainer,

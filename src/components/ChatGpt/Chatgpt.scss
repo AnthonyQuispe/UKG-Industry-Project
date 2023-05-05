@@ -11,7 +11,6 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -20,21 +19,17 @@
     transform: rotate(360deg);
   }
 }
-
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
-
 .card {
   padding: 2em;
 }
-
 .read-the-docs {
   color: #888;
 }
-
 .App {
   position: fixed;
   top: 0;
@@ -46,29 +41,24 @@
   justify-content: center;
   align-items: center;
 }
-
 .cs-button--attachment {
   display: none;
 }
-
 .cs-message__content {
-  background-color: #f0f2f7;
+  background-color: #F0F2F7;
 }
-
 .cs-message--outgoing .cs-message__content {
   color: rgba(0, 0, 0, 0.87);
-  background-color: #97e6dd;
+  background-color: #97E6DD;
   border-radius: 0.7em 0 0 0.7em;
 }
-
 .cs-chat-container .cs-message-input {
-  border-top: solid 1px #9fa1a0;
+  border-top: solid 1px #9FA1A0;
   margin-top: auto;
   padding: 0.3em 0 0.3em 0em;
   color: rgba(0, 0, 0, 0.87);
   background-color: #fff;
 }
-
 .cs-message-input__content-editor-wrapper {
   box-sizing: border-box;
   position: relative;
@@ -78,7 +68,6 @@
   border-radius: 0.7em;
   flex-grow: 1;
 }
-
 .cs-message-input__content-editor {
   box-sizing: border-box;
   flex-grow: 1;
@@ -94,37 +83,31 @@
   word-break: break-word;
   font-size: 20px;
 }
-
 .cs-button--send {
-  color: #6ea9d7;
+  color: #6EA9D7;
   background-color: #005151;
 }
-
 .svg-inline--fa {
   fill: white;
 }
 #my-svg-path {
   fill: white;
 }
-
 .profile-img-chat {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: $primary-dark-teal;
 }
-
 .profile-img {
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
 }
-
 .profle-h1 {
   margin: 0 0 0 2rem;
   // color: ;
 }
-
 .ellipse {
   position: absolute;
   width: 3138.62px;
@@ -135,10 +118,13 @@
   border-radius: 50%; /* creates an ellipse shape */
   transform: rotate(14.93deg);
 }
-
 .Profile-container {
   background-color: white;
 }
 .closeout-img {
   fill: black;
+}
+.closeout-img {
+  height: 30px;
+  padding-right: 1.5rem;
 }
