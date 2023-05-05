@@ -24,8 +24,20 @@
         background-color: $primary-white;
         width: 100%;
         height: 2rem;
+        font-size: 20px;
+
+        &:focus{
+            outline: none;
+            border: 2px solid $primary-light-teal;
+        }
+        &:hover{
+            outline: none;
+            border: 1px solid $primary-light-teal;
+        }
+        
         &-container{
             width: 200%;
+            
         }
         &-subheader{
             position: relative;
@@ -34,7 +46,7 @@
 
         &-container-subheader{
             font-family: volte;
-            border: 2px solid $supporting-light-gray;
+            border: 4px solid $supporting-light-gray;
             background-color: $primary-white;
             margin-bottom: 1rem;
             border-radius: 4px;
