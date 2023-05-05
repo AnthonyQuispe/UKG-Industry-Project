@@ -49,3 +49,90 @@
 .cs-button--attachment {
   display: none;
 }
+
+.cs-message__content {
+  background-color: #f0f2f7;
+}
+
+.cs-message--outgoing .cs-message__content {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #97e6dd;
+  border-radius: 0.7em 0 0 0.7em;
+}
+
+.cs-chat-container .cs-message-input {
+  border-top: solid 1px #9fa1a0;
+  margin-top: auto;
+  padding: 0.3em 0 0.3em 0em;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fff;
+}
+
+.cs-message-input__content-editor-wrapper {
+  box-sizing: border-box;
+  position: relative;
+  background-color: #fff;
+  margin: 0;
+  padding: 0.6em 0.9em;
+  border-radius: 0.7em;
+  flex-grow: 1;
+}
+
+.cs-message-input__content-editor {
+  box-sizing: border-box;
+  flex-grow: 1;
+  background-color: #fff;
+  outline: 0;
+  border-top: 0 none;
+  border-right: 0 none;
+  border-bottom: 0 none;
+  border-left: 0 none;
+  overflow: visible;
+  color: rgba(0, 0, 0, 0.87);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  font-size: 20px;
+}
+
+.cs-button--send {
+  color: #6ea9d7;
+  background-color: #005151;
+}
+
+.svg-inline--fa {
+  fill: white;
+}
+#my-svg-path {
+  fill: white;
+}
+
+.profile-img-chat {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.profle-h1 {
+  margin: 0 0 0 2rem;
+  // color: ;
+}
+
+.ellipse {
+  position: absolute;
+  width: 3138.62px;
+  height: 3368.95px;
+  left: -660.8px;
+  top: -3419px;
+  background-color: #005151;
+  border-radius: 50%; /* creates an ellipse shape */
+  transform: rotate(14.93deg);
+}
+
+.Profile-container {
+  background-color: white;
+}

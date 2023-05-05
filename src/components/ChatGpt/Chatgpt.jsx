@@ -1,6 +1,10 @@
 import { useState } from "react";
 import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
 import "./Chatgpt.scss";
+import CloseOut from "../../assets/icons/CloseOut.png";
+import Send from "../../assets/icons/Send.png";
+import ProfileImg from "../../assets/icons/KarimAbud.png";
+
 import {
   MainContainer,
   ChatContainer,
@@ -27,7 +31,7 @@ function ChatGPT({ setShowCeciBotModal }) {
   const [messages, setMessages] = useState([
     {
       message:
-        "Warm greetings! I'm Ceci, your friendly AI assistant. I'm checking in on you to see how you're feeling and what I can do to help you achieve your goals. Whether you're having a great day or could use a little pick-me-up, I'm here for you! Let's work together to make today an amazing day. ",
+        "Hi there! I am  Ceci Bot working for UKG. Thank you for letting us know how you are feeling today, and I am sorry you feel frustrated. ",
       sentTime: "just now",
       sender: "CeciAi",
     },
@@ -104,23 +108,33 @@ function ChatGPT({ setShowCeciBotModal }) {
 
   return (
     <div className="App">
-      <div style={{ position: "relative", height: "800px", width: "700px" }}>
-        <MainContainer>
-          <ChatContainer>
-            <MessageList
-              scrollBehavior="smooth"
-              typingIndicator={
-                isTyping ? <TypingIndicator content="Ceci is typing" /> : null
-              }
-            >
-              {messages.map((message, i) => {
-                console.log(message);
-                return <Message key={i} model={message} />;
-              })}
-            </MessageList>
-            <MessageInput placeholder="Type message here" onSend={handleSend} />
-          </ChatContainer>
-        </MainContainer>
+      <div className="Profile-container">
+        <div className="profile-img-chat">
+          <img src={ProfileImg} alt="profile" className="profile-img"></img>
+          <h2 className="profle-h1"> chat with us!</h2>
+        </div>
+        <h2>We're online !</h2>
+        <div style={{ position: "relative", width: "700px" }}>
+          <MainContainer>
+            <ChatContainer>
+              <MessageList
+                scrollBehavior="smooth"
+                typingIndicator={
+                  isTyping ? <TypingIndicator content="Ceci is typing" /> : null
+                }
+              >
+                {messages.map((message, i) => {
+                  console.log(message);
+                  return <Message key={i} model={message} />;
+                })}
+              </MessageList>
+              <MessageInput
+                placeholder="Enter your message here"
+                onSend={handleSend}
+              />
+            </ChatContainer>
+          </MainContainer>
+        </div>
       </div>
     </div>
   );
