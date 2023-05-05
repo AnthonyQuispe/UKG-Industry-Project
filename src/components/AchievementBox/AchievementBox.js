@@ -1,9 +1,9 @@
 import React from "react";
 import "./AchievementBox.scss";
-import talentIcon from "../../../assets/icons/Talent icon.png";
-import timeIcon from '../../../assets/icons/Time Assesment icon.png';
-import reportIcon from '../../../assets/icons/Reporting and analytics icon.png';
-import compIcon from '../../../assets/icons/Compliance icon.png';
+import talentIcon from "../../assets/icons/Talent icon.png";
+import timeIcon from '../../assets/icons/Time Assesment icon.png';
+import reportIcon from '../../assets/icons/Reporting and analytics icon.png';
+import compIcon from '../../assets/icons/Compliance icon.png';
 
 const AchievementBox = () => {
   return (
