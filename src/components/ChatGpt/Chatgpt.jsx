@@ -112,6 +112,12 @@ function ChatGPT({ setShowCeciBotModal }) {
         <div className="profile-img-chat">
           <img src={ProfileImg} alt="profile" className="profile-img"></img>
           <h2 className="profle-h1"> chat with us!</h2>
+          <img
+            src={CloseOut}
+            alt="profile"
+            className="closeout-img"
+            onClick={handleCloseoutCeciBot}
+          ></img>
         </div>
         <h2>We're online !</h2>
         <div style={{ position: "relative", width: "700px" }}>

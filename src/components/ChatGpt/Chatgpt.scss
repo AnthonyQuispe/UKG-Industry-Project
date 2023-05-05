@@ -1,3 +1,4 @@
+@use "../../Styles/partials/_variables.scss" as *;
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -109,6 +110,8 @@
 .profile-img-chat {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  background-color: $primary-dark-teal;
 }
 
 .profile-img {
@@ -135,4 +138,7 @@
 
 .Profile-container {
   background-color: white;
+}
+.closeout-img {
+  fill: black;
 }
