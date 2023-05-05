@@ -1,2 +1,12 @@
+<<<<<<< HEAD
 
 
+=======
+@use "../../Styles/partials/variables" as *;
+
+.moods-bar{
+    display: flex;
+    background-color: $primary-dark-teal;
+    justify-content: space-evenly;
+}
+>>>>>>> Develop
