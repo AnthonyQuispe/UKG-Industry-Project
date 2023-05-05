@@ -1,13 +1,12 @@
 import React from 'react'
 import Guy from '../../assets/guy .jpeg'
 import './Dashboard.scss'
-// import Navbar from '../../components/Navbar/Navbar'
-// import './Navbar.scss'
+import Navbar from '../../components/Navbar/Navbar'
 
 const Dashboard = () => {
   return (
       <section className='dash'>
-        {/* <Navbar /> */}
+        <Navbar />
     <div>
         <img src={Guy}  alt='headshot'/>
         <h1>Hello Karim!</h1>
