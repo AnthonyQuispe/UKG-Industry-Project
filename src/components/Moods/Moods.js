@@ -2,7 +2,7 @@ import verySatisfied from '../../assets/icons/wonderful.png';
 import happy from '../../assets/icons/happy.png';
 import neutral from '../../assets/icons/so-so.png';
 import unhappy from '../../assets/icons/unhappy.png';
-
+import Chatgpt from '../ChatGpt/Chatgpt';
 
 const Moods = () => {
 
@@ -20,7 +20,7 @@ const Moods = () => {
             <img src={neutral} alt='neutral face' onClick={() => handleOpenCeciBot()}></img>
             <img src={unhappy} alt='unhappy face' onClick={() => handleOpenCeciBot()}></img>
             <div>
-                {showSeciBotModal && (<ChatGPT setShowCeciBotModal={setShowCeciBotModal}/>)}
+                {showSeciBotModal && (<Chatgpt setShowCeciBotModal={setShowCeciBotModal}/>)}
             </div>
         </div>
     )
@@ -28,11 +28,3 @@ const Moods = () => {
 
 export default Moods;
 
-
-
-////within the function add
-// const handleCloseoutCeciBot = () => {
-//     setShowCeciBotModal(false);
-// };
-//on the button/img you wanna use as X
-// <img src={whatever your x img is} alt="" onClick={handleCloseoutCeciBot}></img>

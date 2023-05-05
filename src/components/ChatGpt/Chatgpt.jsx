@@ -19,7 +19,12 @@ const systemMessage = {
     "Explain things like you're talking as an HR Manager with years of experience to a UKG empolyee.",
 };
 
-function ChatGPT() {
+function ChatGPT({setShowCeciBotModal}) {
+  
+  const handleCloseoutCeciBot = () => {
+        setShowCeciBotModal(false);
+    };
+  
   const [messages, setMessages] = useState([
     {
       message:
@@ -125,3 +130,8 @@ function ChatGPT() {
 }
 
 export default ChatGPT;
+
+
+
+////on the button/img you wanna use as X
+// <img src={whatever your x img is} alt="" onClick={handleCloseoutCeciBot}></img>
