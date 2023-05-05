@@ -5,10 +5,15 @@
 
 
 .button{
-    background-color: $supporting-light-blue;
+    background-color: $primary-light-teal;
     color: $primary-dark-teal;
-    @include desktop-button-labels;
     padding: 0.5rem 1rem;
-    border-radius: 1rem;
+    border-radius: 36px;
     border: 2px solid $primary-dark-teal;
+    height: 7.625rem;
+    width: 15.375rem;
+
+    &__content{
+        font-size: 2.25rem;
+    }
 }
