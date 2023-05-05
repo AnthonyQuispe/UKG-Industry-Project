@@ -7,7 +7,7 @@ function Home (){
     return(
         <section>
             <div>
-                <img src={logo}alt="" />
+                <img src={logo}alt="logo" />
                 <SignIn/>
                 <PointsCard />
             </div>
