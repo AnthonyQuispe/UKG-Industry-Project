@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./Chatgpt.scss";
 import "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
+import "./Chatgpt.scss";
 import {
   MainContainer,
   ChatContainer,
@@ -19,12 +19,11 @@ const systemMessage = {
     "Explain things like you're talking as an HR Manager with years of experience to a UKG empolyee.",
 };
 
-function ChatGPT({setShowCeciBotModal}) {
-  
+function ChatGPT({ setShowCeciBotModal }) {
   const handleCloseoutCeciBot = () => {
-        setShowCeciBotModal(false);
-    };
-  
+    setShowCeciBotModal(false);
+  };
+
   const [messages, setMessages] = useState([
     {
       message:
@@ -96,7 +95,7 @@ function ChatGPT({setShowCeciBotModal}) {
           ...chatMessages,
           {
             message: data.choices[0].message.content,
-            sender: "ChatGPT",
+            sender: "Ceci",
           },
         ]);
         setIsTyping(false);
@@ -111,9 +110,7 @@ function ChatGPT({setShowCeciBotModal}) {
             <MessageList
               scrollBehavior="smooth"
               typingIndicator={
-                isTyping ? (
-                  <TypingIndicator content="ChatGPT is typing" />
-                ) : null
+                isTyping ? <TypingIndicator content="Ceci is typing" /> : null
               }
             >
               {messages.map((message, i) => {
@@ -130,8 +127,3 @@ function ChatGPT({setShowCeciBotModal}) {
 }
 
 export default ChatGPT;
-
-
-
-////on the button/img you wanna use as X
-// <img src={whatever your x img is} alt="" onClick={handleCloseoutCeciBot}></img>

@@ -1,5 +1,5 @@
 // import Home from "./Pages/Home/Home";
-import Chatgpt from "./components/ChatGpt/Chatgpt"
+import Chatgpt from "./components/ChatGpt/Chatgpt";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard/Dashboard";
