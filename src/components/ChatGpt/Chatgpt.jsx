@@ -14,13 +14,13 @@ import {
   TypingIndicator,
 } from "@chatscope/chat-ui-kit-react";
 
-const API_KEY = "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";
+const API_KEY = process.env.REACT_APP_ChatGpt_API_KEY;
 // "Explain things like you would to a 10 year old learning how to code."
 const systemMessage = {
   //  Explain things like you're talking to a software professional with 5 years of experience.
   role: "system",
   content:
-    "Explain things like you're talking as an HR Manager with years of experience to a UKG empolyee.",
+    "Explain things like you're talking as an HR AI assistant with years of experience to a UKG empolyee.",
 };
 
 function ChatGPT({ setShowCeciBotModal }) {
@@ -31,7 +31,7 @@ function ChatGPT({ setShowCeciBotModal }) {
   const [messages, setMessages] = useState([
     {
       message:
-        "Hi there! I am  Ceci Bot working for UKG. Thank you for letting us know how you are feeling today, and I am sorry you feel frustrated. ",
+        "Hi there! I am Ceci working for UKG. Thank you for letting me know how you are feeling today, please tell me what caused you to feel this way?",
       sentTime: "just now",
       sender: "CeciAi",
     },
