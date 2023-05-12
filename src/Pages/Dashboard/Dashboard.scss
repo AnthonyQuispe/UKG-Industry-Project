@@ -34,6 +34,9 @@
         height: 20rem;
         width: 20rem;
         border-radius: 50%;
+        box-shadow: rgba(241, 244, 244, 0.25) 0px 25px 50px -12px;
+        object-fit: cover;
+        object-position: center;
     }
 
     &__cards-container{
